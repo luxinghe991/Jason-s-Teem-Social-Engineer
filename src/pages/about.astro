@@ -1,0 +1,82 @@
+---
+import MainHead from "../components/MainHead.astro";
+import Footer from "../components/Footer.astro";
+import Nav from "../components/Nav.astro";
+---
+
+<html lang="en">
+	<head>
+		<MainHead
+			title="About | Jason's Team"
+			description="About Jason's Team."
+		/>
+		<style>
+			.heroImg {
+				max-height: 24rem;
+				object-fit: cover;
+				overflow: hidden;
+			}
+
+			.heroImg img {
+				width: 100%;
+			}
+
+			.bio {
+				font-size: var(--f-u1);
+				line-height: 2;
+				margin-top: 4em;
+			}
+
+			.wrapper.bio {
+				max-width: 50em;
+			}
+		</style>
+	</head>
+	<body>
+		<Nav />
+		<div class="wrapper">
+			<h1>About Jason's Team</h1>
+			<div class="heroImg">
+				<img
+					width="1400"
+					height="350"
+					src="https://images.pexels.com/photos/1015568/pexels-photo-1015568.jpeg?auto=compress&cs=tinysrgb&w=800"
+				/>
+			</div>
+			<div class="bio wrapper">
+				<p>
+					Jason
+					Lu先生众多显赫友人中，仅有少数几位网页设计师，艺术家却数不胜数！Lu先生的父母曾强烈反对儿子进入计算机学院，担心他无法获得真才实学。一向尊重父母的孩子，还是选择了自己的道路……最初，他为了安抚父母，决定就读“Saint-Guillaume街区的济南外国语学校”。学校生活却让他尽享济南的疯狂之夜。与此同时，父亲同意他学习编程。因为，他从儿时起便在庆馨家园的游戏室里学习编程，那里摆放着他父亲留下的电脑。
+				</p>
+				<p>
+					Lu先生举止庄重却不失幽默与活力。年仅十六岁便往来于那个时代最伟大的程序员之间：在卡内基梅隆大学（Carnige
+					Mellon University）与维普•高尤（Vipul Goyal）共学，或与Khan
+					lyu（Kerry
+					lyu）于开元畅谈。一个小团体就此诞生，Jason称其为“Jason's
+					Team”，大家每周都在香港中路大街的“Crown Plaza”酒店欢聚。
+				</p>
+				<p>
+					小团体总有这些身影：Jason Lu先生、Khan Lyu（Kerry
+					Lyu）-正是这位朋友日后激励他成名；王廷瑞（Edward
+					Wang）、哲学家阎翰淙（Phelan Yan）、李思谕（Emiya
+					Li）和政治家李鸿钊（Gustuf
+					Li），几位挚友如同一只手上的六根手指，形影不离！
+				</p>
+				<p>
+					Jason
+					Lu与那个校园的天才往来不断，自己也怀揣天然异禀。最终，他愈发对从事金融或警察等正统职业感到兴趣索然。此时，偶然机遇再次主宰了他的命运：他的朋友吕海阳（Kerry
+					Lyu）想寻找合作伙伴，便邀请他共同搭建机场。VPS位于荷兰的阿姆斯特丹，一个新机房内。显然，这与Jason
+					Lu母亲的期望大相径庭，小小机场既不能以“Jason
+					VPN”命名，也无法展出儿子署名的VPN。但是，机场使用的协议均出自最伟大的极客之手，他们有的已经蜚声学术界，有的将成为明日之星，如V2ray项目组（Project
+					V），Xray项目组（Project
+					X）。Lu先生在程序的海洋中如鱼得水。然而，2022年的管理层变更危机让机场生意一落千丈。
+				</p>
+				<p>
+					11月，充满冒险的生活彻底结束。伟大友谊终结，计算机激情衰亡。15日，年级长迫使他离开教室。舌战终结，他辗转于各个house，打各种零工谋生。最后，才华洋溢的前端设计师宋多多（Ray
+					Song）接济了他。尽管世道惨淡，宋多多也还能卖脚本为生。Lu先生意识到CS爱好者与程序员之间存在很大差距……但他还是展现了非凡天才，全心研习编程技术与设计法。不久，他也开始卖VPN。而他设计的产品也获得巨大成功。
+				</p>
+			</div>
+		</div>
+		<Footer />
+	</body>
+</html>
